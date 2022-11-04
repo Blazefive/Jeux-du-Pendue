@@ -1,0 +1,54 @@
+1  J'importe la bibliothèque "random".
+2
+3  Je définie le nom de ma fonction.
+4	Je definie la liste de mot pouvant être demandé.
+5	J'initialise  une liste vide pour les future lettre deja utiliser.
+6	J'initialise une list vide qui va acceuillir mon mot masquer.
+7	J'initalise un compteur a 0 qui sera mon compteur d'essai.
+8	'I' prend une valeur aléatoir entre 0 et le nombre d'élément qu'il y a dans ma list de mot possible.(ici on a -1 car il s'arrette un cran après)
+9	'a_chercher' prend la valeur de l'élément a la place 'I' ou 'I' est aléatoir.
+10	Dans ma list 'masquer', j'y introduit la première lettre de mon mot qui se trouve a la place '0' dans dans ce dernier.
+11	Je crée une boucle 'Pour i allant de (0, la taille de ma liste'a_chercher'-1)'.   (ici on a -1 car il s'arrette un cran après)
+12		J'ajoute a ma liste 'masque'r une étoile a chaque passage dans la boucle ou cette ligne est.
+13	Je crée une boucle 'Pour i allant de (0,7)'
+14		J'affiche 2 retour a la ligne pour un affichage plus clean.
+15		Puis j'affiche mon compteur en direct.
+16		J'affiche mon mot masquer.
+17		J'ajoute 1 a mon compteur.
+18		Je demande a l'utilisateur d'entrée une valeur/lettre 'x' qui sera en str(chaine de caractère) via un popup qui demandera:'Tapez La lettre choisit ou tapez 1 pour proposez un mot !'
+19		Ici je dit que toute les lettre donner par l'utilisateur en minuscule se transforme en majuscule.
+20		Si la taille de la valeur demander a l'utilisateur est différent de 1 caractère:
+21			Je retire 1 a mon compteur.
+22			J'affiche 'Veuillez ne renseigné que une seul lettre !'.
+23		Sinon :
+24			Si x est égale a "1":
+25				J'affiche un saut de ligne.
+26				J'affiche 'Proposer un mot'.
+27				J'affiche 'Voici votre mot' ainsi que la list 'masquer'.
+28				Je demande a l'utilisateur de rentrer un mot 'proposition' qu'il pense etre celui cacher(de type string).
+29				Si proposition est égale a 'a_cherhcer' donc mon mot cacher.
+30					J'affiche 4 saut a la ligne d'affiler.
+31					Je retourne 'Bravo vous avez trouvé ! Le mot était 'a_chercher' !' (les + représente un concaténation pour ne pas afficher les guillemet).
+32				Sinon :
+33					J'affiche 'Bien essayer mais ce n'est pas cela !'.
+34			Sinon:
+35				Si le compteur est égale a 7:
+36					J'affiche 'Trop d'éssai'.
+38				Sinon:
+39					Si 'x' est dans la list 'deja_essayer'.
+40						On retire 1 au compteur.
+41						On affiche 'Cette lettre a déja été dite !'.
+42					Sinon:
+43						On ajoute 'x' a la liste 'deja_essayer'.
+44						Si 'x' est dans 'a_chercher'
+45							Je crée une boucle "Pour 'y' allant de 0 a la taille de ma liste 'masquer'"
+46								Si l'élément de la liste 'a_chercher' est égale a 'x'
+47									L'élément a la place 'y' de la liste masquer prend la valeur 'x'
+48						Sinon:
+49							J'affiche 'Cette lettre n'est pas dans le mot !'
+50  		Je retourne ma liste masquer(facultatif, c'est pour donner une fin au programme'
+
+	
+
+
+
